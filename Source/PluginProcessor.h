@@ -58,6 +58,6 @@ public:
 
 private:
     //==============================================================================
-    Distor distortion;
+    Distor<float> distortion;
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DistortionAudioProcessor)
 };

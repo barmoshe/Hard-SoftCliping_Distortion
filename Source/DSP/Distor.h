@@ -18,6 +18,13 @@ public:
     Distor();
     void prepare(juce::dsp::ProcessSpec& spec);
     void reset();
-    void process(const processContext& context)noexcept;
-    
+    template <typename ProcessContext>
+    void process(const ProcessContext& context)noexcept
+    {
+        
+    }
+    void processSample(SampleType inputSample)noexcept
+    {
+        
+    }
 };

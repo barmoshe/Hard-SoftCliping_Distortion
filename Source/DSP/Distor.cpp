@@ -10,7 +10,23 @@
 
 #include "Distor.h"
 
-Distor::Distor()
+template <typename SampleType>
+Distor<SampleType>::Distor()
 {
     
 }
+template <typename SampleType>
+void Distor<SampleType>::prepare(juce::dsp::ProcessSpec& spec)
+{
+    
+}
+template <typename SampleType>
+void Distor<SampleType>::reset()
+{
+    
+}
+
+template class Distor<float>;
+template class Distor<double>;
+
+
