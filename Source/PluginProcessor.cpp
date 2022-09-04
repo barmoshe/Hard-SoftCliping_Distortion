@@ -20,6 +20,7 @@ DistortionAudioProcessor::DistortionAudioProcessor()
                        .withOutput ("Output", juce::AudioChannelSet::stereo(), true)
                      #endif
                        )
+,_treeState(this, nullptr, "parameters", createParameterLayout())
 #endif
 {
 }
@@ -28,6 +29,10 @@ DistortionAudioProcessor::~DistortionAudioProcessor()
 {
 }
 
+//juce::AudioProcessorValueTreeState::ParameterLayout createParameterLayout();
+//{
+////    std::vector <std::unique_ptr
+//}
 //==============================================================================
 const juce::String DistortionAudioProcessor::getName() const
 {
